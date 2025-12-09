@@ -1,58 +1,45 @@
+import os
 import pandas as pd
 import streamlit as st
-
-DATA_PATH = "data/bls_labor_data.csv"
+import altair as alt
 
 st.set_page_config(page_title="U.S. Labor Market Dashboard", layout="wide")
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "data", "bls_labor_data.csv")
+
 @st.cache_data
 def load_data():
+    if not os.path.exists(DATA_PATH):
+        st.error(f"CSV file not found at: {DATA_PATH}")
+        st.stop()
     df = pd.read_csv(DATA_PATH, parse_dates=["date"])
     return df
 
 df = load_data()
 
-SERIES_META = {
-    "Total Nonfarm Employment (000s)": "CES0000000001",
-    "Unemployment Rate (%)": "LNS14000000",
-    "Avg Hourly Earnings, Total Private ($)": "CES0500000003",
-    "Labor Force Participation Rate (%)": "LNS11300000",
-    "Manufacturing Employment (000s)": "CES3000000001",
-    "Leisure & Hospitality Employment (000s)": "CES7000000001",
-}
-
-st.title("U.S. Labor Market Dashboard")
+st.title("U.S. Labor Market Dashboard (BLS)")
 st.caption("Source: U.S. Bureau of Labor Statistics")
 
-min_date = df["date"].min()
-max_date = df["date"].max()
+series_options = df["series_name"].unique()
+selected_series = st.sidebar.selectbox("Select Economic Indicator:", series_options)
 
-with st.sidebar:
-    st.header("Filters")
-    date_range = st.slider("Select date range", min_date, max_date, (min_date, max_date))
+filtered_df = df[df["series_name"] == selected_series]
 
-    indicators = st.multiselect(
-        "Select indicators",
-        list(SERIES_META.keys()),
-        default=["Total Nonfarm Employment (000s)", "Unemployment Rate (%)"],
+chart = (
+    alt.Chart(filtered_df)
+    .mark_line(point=True)
+    .encode(
+        x="date:T",
+        y="value:Q",
+        tooltip=["date:T", "value:Q"]
     )
+    .properties(title=selected_series)
+)
 
-mask = (df["date"] >= date_range[0]) & (df["date"] <= date_range[1])
-df_range = df[mask]
+st.altair_chart(chart, use_container_width=True)
 
-st.subheader("Trends Over Time")
+with st.expander("View Raw Data"):
+    st.dataframe(filtered_df)
 
-plot_data = []
-for name in indicators:
-    sid = SERIES_META[name]
-    temp = df_range[df_range["series_id"] == sid][["date", "value"]]
-    temp = temp.rename(columns={"value": name})
-    plot_data.append(temp)
-
-if plot_data:
-    from functools import reduce
-    chart_df = reduce(lambda left, right: pd.merge(left, right, on="date", how="outer"), plot_data)
-    chart_df = chart_df.set_index("date")
-    st.line_chart(chart_df)
-
-st.caption(f"Last updated: {df['date'].max().strftime('%B %Y')}")
+st.caption(f"Last updated: {df['date'].max().date()}")
