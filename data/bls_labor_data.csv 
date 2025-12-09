@@ -1,5 +1,0 @@
-series_id,series_name,year,period,period_name,value,date
-CES0000000001,Total Nonfarm Employment,2024,M01,January,157000,2024-01-01
-CES0000000001,Total Nonfarm Employment,2024,M02,February,157200,2024-02-01
-LNS14000000,Unemployment Rate,2024,M01,January,3.7,2024-01-01
-LNS14000000,Unemployment Rate,2024,M02,February,3.8,2024-02-01
