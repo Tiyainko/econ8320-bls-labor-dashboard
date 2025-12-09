@@ -1,21 +1,17 @@
 import os
-import streamlit as st
-
-DATA_PATH = "data/bls_labor_data.csv"
-
-if not os.path.exists(DATA_PATH):
-    st.error("CSV file not found at data/bls_labor_data.csv. Please check your GitHub repo.")
-    st.stop()
-
 import pandas as pd
 import streamlit as st
 
-DATA_PATH = "data/bls_labor_data.csv"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "data", "bls_labor_data.csv")
 
 st.set_page_config(page_title="U.S. Labor Market Dashboard", layout="wide")
 
 @st.cache_data
 def load_data():
+    if not os.path.exists(DATA_PATH):
+        st.error(f"CSV file not found at: {DATA_PATH}")
+        st.stop()
     df = pd.read_csv(DATA_PATH, parse_dates=["date"])
     return df
 
