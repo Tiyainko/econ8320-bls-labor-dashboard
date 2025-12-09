@@ -1,10 +1,9 @@
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="U.S. Labor Market Dashboard", layout="wide")
+DATA_PATH = "data/bls_labor_data.csv"
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(BASE_DIR, "data", "bls_labor_data.csv")
+st.set_page_config(page_title="U.S. Labor Market Dashboard", layout="wide")
 
 @st.cache_data
 def load_data():
