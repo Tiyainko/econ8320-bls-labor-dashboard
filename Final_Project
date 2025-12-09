@@ -1,11 +1,11 @@
 econ8320-bls-dashboard/
-├─ app.py                      # Streamlit dashboard
-├─ collect_bls_data.py         # Script to collect / update BLS data
-├─ requirements.txt            # Python dependencies
+├─ app.py                      
+├─ collect_bls_data.py         
+├─ requirements.txt            
 ├─ data/
-│  └─ bls_labor_data.csv       # Processed dataset (generated)
+│  └─ bls_labor_data.csv       
 ├─ .github/
 │  └─ workflows/
-│     └─ update_data.yml       # GitHub Action to refresh data monthly
+│     └─ update_data.yml       
 ├─ README.md
-└─ config_example.py           # Shows how to store your BLS API key locally
+└─ config_example.py           
