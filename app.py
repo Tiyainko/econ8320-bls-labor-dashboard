@@ -1,3 +1,12 @@
+import os
+import streamlit as st
+
+DATA_PATH = "data/bls_labor_data.csv"
+
+if not os.path.exists(DATA_PATH):
+    st.error("CSV file not found at data/bls_labor_data.csv. Please check your GitHub repo.")
+    st.stop()
+
 import pandas as pd
 import streamlit as st
 
