@@ -40,6 +40,8 @@ filtered_df = filtered_df[
     (filtered_df["date"] >= date_range[0]) &
     (filtered_df["date"] <= date_range[1])]
 
+filtered_df = filtered_df.sort_values("date").reset_index(drop=True)
+
 
 latest_value = filtered_df.iloc[-1]["value"]
 latest_date = filtered_df.iloc[-1]["date"]
@@ -52,19 +54,16 @@ else:
     change = 0
     pct_change = 0
 
+if "Rate" in selected_series or "Unemployment" in selected_series:
+    display_value = f"{latest_value:.2f}%"
+else:
+    display_value = f"{latest_value:,.2f}"
+
 col1, col2, col3 = st.columns(3)
 
-col1.metric(
-    label="Current Value",
-    value=f"{latest_value:,.0f}")
-
-col2.metric(
-    label="Month-over-Month Change",
-    value=f"{change:,.0f}")
-
-col3.metric(
-    label="Percent Change",
-    value=f"{pct_change:.2f}%")
+col1.metric(label="Current Value", value=display_value)
+col2.metric(label="Month-over-Month Change", value=f"{change:,.2f}")
+col3.metric(label="Percent Change", value=f"{pct_change:.2f}%")
 
 if change > 0:
     direction = "increased"
@@ -79,6 +78,8 @@ st.info(
     f"**{selected_series} {direction} by {abs(change):,.2f} units "
     f"({pct_change:.2f}%)**, suggesting a "
     f"{'strengthening' if change > 0 else 'weakening' if change < 0 else 'stable'} labor market trend.")
+
+
 chart = (
     alt.Chart(filtered_df)
     .mark_line(point=True)
