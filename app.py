@@ -65,14 +65,18 @@ st.info(
     f"({pct_change:.2f}%)**, suggesting a "
     f"{'strengthening' if change > 0 else 'weakening' if change < 0 else 'stable'} labor market trend.")
 
-
 chart = (
     alt.Chart(filtered_df)
     .mark_line(point=True)
     .encode(
-        x="date:T",
-        y="value:Q",
-        tooltip=["date:T", "value:Q"])
+        x=alt.X(
+            "date:T",
+            title="Year",
+            axis=alt.Axis(format="%Y", tickCount="year")  
+        ),
+        y=alt.Y("value:Q", title="Value"),
+        tooltip=["date:T", "value:Q"]
+    )
     .properties(title=selected_series))
 
 st.altair_chart(chart, use_container_width=True)
