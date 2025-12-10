@@ -3,33 +3,39 @@ import pandas as pd
 import os
 from datetime import datetime
 
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+OUTPUT_FILE = os.path.join(DATA_DIR, "bls_labor_data.csv")
+
+START_YEAR = 2010
+END_YEAR = datetime.now().year
+
 SERIES = {
     "CES0000000001": "Total Nonfarm Employment",
     "LNS14000000": "Unemployment Rate"}
 
-START_YEAR = 2019
-END_YEAR = datetime.now().year
-
-OUT_PATH = os.path.join("data", "bls_labor_data.csv")
+os.makedirs(DATA_DIR, exist_ok=True)
 
 rows = []
 
 for series_id, series_name in SERIES.items():
-    url = f"https://api.bls.gov/publicAPI/v2/timeseries/data/{series_id}?startyear={START_YEAR}&endyear={END_YEAR}"
+    for year in range(START_YEAR, END_YEAR + 1):
+        url = f"https://api.bls.gov/publicAPI/v2/timeseries/data/{series_id}"
+        params = {
+            "startyear": year,
+            "endyear": year}
 
-    response = requests.get(url)
-    data = response.json()
+        response = requests.get(url, params=params)
+        data = response.json()
 
-    if "Results" not in data:
-        raise RuntimeError("BLS API request failed.")
+        if "Results" not in data:
+            print(f"Failed for {series_id} {year}")
+            continue
 
-    for series in data["Results"]["series"]:
-        for item in series["data"]:
-
-            year = int(item["year"])
+        for item in data["Results"]["series"][0]["data"]:
             period = item["period"]
-
-            if not period.startswith("M"):
+            if period == "M13":  
                 continue
 
             month = int(period.replace("M", ""))
@@ -43,9 +49,9 @@ for series_id, series_name in SERIES.items():
                 "period_name": item["periodName"],
                 "value": float(item["value"]),
                 "date": date})
-df = pd.DataFrame(rows).sort_values("date")
 
-os.makedirs("data", exist_ok=True)
-df.to_csv(OUT_PATH, index=False)
+df = pd.DataFrame(rows)
+df = df.sort_values(["series_name", "date"])
+df.to_csv(OUTPUT_FILE, index=False)
 
-print("Real BLS data pulled successfully")
+print(f"Full BLS history saved to {OUTPUT_FILE}")
