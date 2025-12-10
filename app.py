@@ -97,3 +97,45 @@ with st.expander("View Raw Data"):
     st.dataframe(filtered_df)
 
 st.caption(f"Last updated: {df['date'].max().date()}")
+
+st.subheader("Sectoral Job Changes (Latest Month)")
+
+sector_list = [
+    "Manufacturing Employment",
+    "Leisure & Hospitality Employment",
+    "Total Nonfarm Employment"]
+
+sector_df = df[df["series_name"].isin(sector_list)].copy()
+sector_df = sector_df.sort_values(["series_name", "date"])
+
+sector_df["prev_value"] = sector_df.groupby("series_name")["value"].shift(1)
+sector_df["mo_change"] = sector_df["value"] - sector_df["prev_value"]
+
+latest_sector_changes = sector_df.groupby("series_name").tail(1)
+
+bar_chart = (
+    alt.Chart(latest_sector_changes)
+    .mark_bar()
+    .encode(
+        x=alt.X("series_name:N", title="Sector"),
+        y=alt.Y("mo_change:Q", title="Month-to-Month Change"),
+        tooltip=["series_name", "mo_change"])
+    .properties(title="Latest Monthly Job Change by Sector"))
+
+st.altair_chart(bar_chart, use_container_width=True)
+
+st.subheader("Sector Employment Trends Over Time")
+
+area_chart = (
+    alt.Chart(sector_df)
+    .mark_area(opacity=0.6)
+    .encode(
+        x=alt.X("date:T", title="Month"),
+        y=alt.Y("value:Q", title="Employment Level"),
+        color="series_name:N",
+        tooltip=["series_name", "date:T", "value:Q"]
+    )
+    .properties(title="Employment Trends by Sector"))
+
+st.altair_chart(area_chart, use_container_width=True)
+
