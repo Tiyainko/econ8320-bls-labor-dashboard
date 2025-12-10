@@ -2,69 +2,67 @@ import requests
 import pandas as pd
 import os
 from datetime import datetime
-import time
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
-OUTPUT_FILE = os.path.join(DATA_DIR, "bls_labor_data.csv")
+DATA_PATH = os.path.join(DATA_DIR, "bls_labor_data.csv")
 
-START_YEAR = 2010
+START_YEAR = 2019
 END_YEAR = datetime.now().year
 
 SERIES = {
     "CES0000000001": "Total Nonfarm Employment",
-    "LNS14000000": "Unemployment Rate"}
+    "LNS14000000": "Unemployment Rate",
+    "CES0500000003": "Average Hourly Earnings",
+    "LNS11300000": "Labor Force Participation Rate",
+    "CES3000000001": "Manufacturing Employment",
+    "CES7000000001": "Leisure & Hospitality Employment"}
+
+
+def fetch_series(series_id, series_name):
+    url = f"https://api.bls.gov/publicAPI/v2/timeseries/data/{series_id}?startyear={START_YEAR}&endyear={END_YEAR}"
+    response = requests.get(url)
+    data = response.json()
+
+    if "Results" not in data or "series" not in data["Results"]:
+        raise RuntimeError(f"BLS API failed for series: {series_id}")
+
+    records = []
+    for item in data["Results"]["series"][0]["data"]:
+        if item["period"].startswith("M"):
+            date_str = f'{item["year"]}-{item["period"][1:]}-01'
+            records.append({
+                "series_id": series_id,
+                "series_name": series_name,
+                "year": int(item["year"]),
+                "period": item["period"],
+                "period_name": item["periodName"],
+                "value": float(item["value"]),
+                "date": pd.to_datetime(date_str)})
+
+    return records
+
+
+all_data = []
+
+for sid, name in SERIES.items():
+    print(f"Fetching: {name}")
+    all_data.extend(fetch_series(sid, name))
+
+df_new = pd.DataFrame(all_data)
 
 
 os.makedirs(DATA_DIR, exist_ok=True)
 
-rows = []
+if os.path.exists(DATA_PATH):
+    df_old = pd.read_csv(DATA_PATH, parse_dates=["date"])
+    df_final = pd.concat([df_old, df_new]).drop_duplicates(
+        subset=["series_id", "date"], keep="last")
+else:
+    df_final = df_new
 
+df_final = df_final.sort_values(["series_name", "date"])
+df_final.to_csv(DATA_PATH, index=False)
 
-for series_id, series_name in SERIES.items():
-    for year in range(START_YEAR, END_YEAR + 1):
-
-        url = f"https://api.bls.gov/publicAPI/v2/timeseries/data/{series_id}"
-        params = {
-            "startyear": year,
-            "endyear": year}
-
-        print(f"Fetching {series_name} for {year}...")
-
-        response = requests.get(url, params=params)
-        data = response.json()
-
-        
-        if "Results" not in data or "series" not in data["Results"]:
-            print(f" Skipping {series_name} {year} (API returned no series)")
-            time.sleep(1)
-            continue
-
-        series_data = data["Results"]["series"][0]["data"]
-
-        for item in series_data:
-            period = item["period"]
-
-            if period == "M13":
-                continue  
-
-            month = int(period.replace("M", ""))
-            date = datetime(year, month, 1)
-
-            rows.append({
-                "series_id": series_id,
-                "series_name": series_name,
-                "year": year,
-                "period": period,
-                "period_name": item["periodName"],
-                "value": float(item["value"]),
-                "date": date})
-
-        time.sleep(1)  
-
-df = pd.DataFrame(rows)
-df = df.sort_values(["series_name", "date"])
-df.to_csv(OUTPUT_FILE, index=False)
-
-print(f"\n FULL BLS DATA SAVED → {OUTPUT_FILE}")
+print("Full monthly BLS data updated successfully.")
