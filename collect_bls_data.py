@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 import os
 from datetime import datetime
+import time
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -15,28 +16,38 @@ SERIES = {
     "CES0000000001": "Total Nonfarm Employment",
     "LNS14000000": "Unemployment Rate"}
 
+
 os.makedirs(DATA_DIR, exist_ok=True)
 
 rows = []
 
+
 for series_id, series_name in SERIES.items():
     for year in range(START_YEAR, END_YEAR + 1):
+
         url = f"https://api.bls.gov/publicAPI/v2/timeseries/data/{series_id}"
         params = {
             "startyear": year,
             "endyear": year}
 
+        print(f"Fetching {series_name} for {year}...")
+
         response = requests.get(url, params=params)
         data = response.json()
 
-        if "Results" not in data:
-            print(f"Failed for {series_id} {year}")
+        
+        if "Results" not in data or "series" not in data["Results"]:
+            print(f" Skipping {series_name} {year} (API returned no series)")
+            time.sleep(1)
             continue
 
-        for item in data["Results"]["series"][0]["data"]:
+        series_data = data["Results"]["series"][0]["data"]
+
+        for item in series_data:
             period = item["period"]
-            if period == "M13":  
-                continue
+
+            if period == "M13":
+                continue  
 
             month = int(period.replace("M", ""))
             date = datetime(year, month, 1)
@@ -50,8 +61,10 @@ for series_id, series_name in SERIES.items():
                 "value": float(item["value"]),
                 "date": date})
 
+        time.sleep(1)  
+
 df = pd.DataFrame(rows)
 df = df.sort_values(["series_name", "date"])
 df.to_csv(OUTPUT_FILE, index=False)
 
-print(f"Full BLS history saved to {OUTPUT_FILE}")
+print(f"\n FULL BLS DATA SAVED → {OUTPUT_FILE}")
