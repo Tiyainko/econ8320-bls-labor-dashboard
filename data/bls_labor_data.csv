@@ -1,4 +1,328 @@
 series_id,series_name,year,period,period_name,value,date
+CES0500000003,Average Hourly Earnings,2019,M01,January,27.59,2019-01-01
+CES0500000003,Average Hourly Earnings,2019,M02,February,27.69,2019-02-01
+CES0500000003,Average Hourly Earnings,2019,M03,March,27.77,2019-03-01
+CES0500000003,Average Hourly Earnings,2019,M04,April,27.79,2019-04-01
+CES0500000003,Average Hourly Earnings,2019,M05,May,27.88,2019-05-01
+CES0500000003,Average Hourly Earnings,2019,M06,June,27.96,2019-06-01
+CES0500000003,Average Hourly Earnings,2019,M07,July,28.03,2019-07-01
+CES0500000003,Average Hourly Earnings,2019,M08,August,28.14,2019-08-01
+CES0500000003,Average Hourly Earnings,2019,M09,September,28.16,2019-09-01
+CES0500000003,Average Hourly Earnings,2019,M10,October,28.23,2019-10-01
+CES0500000003,Average Hourly Earnings,2019,M11,November,28.34,2019-11-01
+CES0500000003,Average Hourly Earnings,2019,M12,December,28.38,2019-12-01
+CES0500000003,Average Hourly Earnings,2020,M01,January,28.43,2020-01-01
+CES0500000003,Average Hourly Earnings,2020,M02,February,28.54,2020-02-01
+CES0500000003,Average Hourly Earnings,2020,M03,March,28.74,2020-03-01
+CES0500000003,Average Hourly Earnings,2020,M04,April,30.04,2020-04-01
+CES0500000003,Average Hourly Earnings,2020,M05,May,29.72,2020-05-01
+CES0500000003,Average Hourly Earnings,2020,M06,June,29.38,2020-06-01
+CES0500000003,Average Hourly Earnings,2020,M07,July,29.39,2020-07-01
+CES0500000003,Average Hourly Earnings,2020,M08,August,29.5,2020-08-01
+CES0500000003,Average Hourly Earnings,2020,M09,September,29.51,2020-09-01
+CES0500000003,Average Hourly Earnings,2020,M10,October,29.55,2020-10-01
+CES0500000003,Average Hourly Earnings,2020,M11,November,29.64,2020-11-01
+CES0500000003,Average Hourly Earnings,2020,M12,December,29.91,2020-12-01
+CES0500000003,Average Hourly Earnings,2021,M01,January,29.92,2021-01-01
+CES0500000003,Average Hourly Earnings,2021,M02,February,30.07,2021-02-01
+CES0500000003,Average Hourly Earnings,2021,M03,March,30.04,2021-03-01
+CES0500000003,Average Hourly Earnings,2021,M04,April,30.23,2021-04-01
+CES0500000003,Average Hourly Earnings,2021,M05,May,30.41,2021-05-01
+CES0500000003,Average Hourly Earnings,2021,M06,June,30.55,2021-06-01
+CES0500000003,Average Hourly Earnings,2021,M07,July,30.66,2021-07-01
+CES0500000003,Average Hourly Earnings,2021,M08,August,30.79,2021-08-01
+CES0500000003,Average Hourly Earnings,2021,M09,September,30.96,2021-09-01
+CES0500000003,Average Hourly Earnings,2021,M10,October,31.15,2021-10-01
+CES0500000003,Average Hourly Earnings,2021,M11,November,31.25,2021-11-01
+CES0500000003,Average Hourly Earnings,2021,M12,December,31.41,2021-12-01
+CES0500000003,Average Hourly Earnings,2022,M01,January,31.62,2022-01-01
+CES0500000003,Average Hourly Earnings,2022,M02,February,31.66,2022-02-01
+CES0500000003,Average Hourly Earnings,2022,M03,March,31.82,2022-03-01
+CES0500000003,Average Hourly Earnings,2022,M04,April,31.96,2022-04-01
+CES0500000003,Average Hourly Earnings,2022,M05,May,32.1,2022-05-01
+CES0500000003,Average Hourly Earnings,2022,M06,June,32.2,2022-06-01
+CES0500000003,Average Hourly Earnings,2022,M07,July,32.35,2022-07-01
+CES0500000003,Average Hourly Earnings,2022,M08,August,32.44,2022-08-01
+CES0500000003,Average Hourly Earnings,2022,M09,September,32.55,2022-09-01
+CES0500000003,Average Hourly Earnings,2022,M10,October,32.7,2022-10-01
+CES0500000003,Average Hourly Earnings,2022,M11,November,32.84,2022-11-01
+CES0500000003,Average Hourly Earnings,2022,M12,December,32.96,2022-12-01
+CES0500000003,Average Hourly Earnings,2023,M01,January,33.05,2023-01-01
+CES0500000003,Average Hourly Earnings,2023,M02,February,33.16,2023-02-01
+CES0500000003,Average Hourly Earnings,2023,M03,March,33.28,2023-03-01
+CES0500000003,Average Hourly Earnings,2023,M04,April,33.42,2023-04-01
+CES0500000003,Average Hourly Earnings,2023,M05,May,33.52,2023-05-01
+CES0500000003,Average Hourly Earnings,2023,M06,June,33.69,2023-06-01
+CES0500000003,Average Hourly Earnings,2023,M07,July,33.84,2023-07-01
+CES0500000003,Average Hourly Earnings,2023,M08,August,33.89,2023-08-01
+CES0500000003,Average Hourly Earnings,2023,M09,September,33.99,2023-09-01
+CES0500000003,Average Hourly Earnings,2023,M10,October,34.07,2023-10-01
+CES0500000003,Average Hourly Earnings,2023,M11,November,34.19,2023-11-01
+CES0500000003,Average Hourly Earnings,2023,M12,December,34.31,2023-12-01
+CES0500000003,Average Hourly Earnings,2024,M01,January,34.47,2024-01-01
+CES0500000003,Average Hourly Earnings,2024,M02,February,34.54,2024-02-01
+CES0500000003,Average Hourly Earnings,2024,M03,March,34.67,2024-03-01
+CES0500000003,Average Hourly Earnings,2024,M04,April,34.75,2024-04-01
+CES0500000003,Average Hourly Earnings,2024,M05,May,34.89,2024-05-01
+CES0500000003,Average Hourly Earnings,2024,M06,June,35.0,2024-06-01
+CES0500000003,Average Hourly Earnings,2024,M07,July,35.07,2024-07-01
+CES0500000003,Average Hourly Earnings,2024,M08,August,35.23,2024-08-01
+CES0500000003,Average Hourly Earnings,2024,M09,September,35.33,2024-09-01
+CES0500000003,Average Hourly Earnings,2024,M10,October,35.48,2024-10-01
+CES0500000003,Average Hourly Earnings,2024,M11,November,35.61,2024-11-01
+CES0500000003,Average Hourly Earnings,2024,M12,December,35.68,2024-12-01
+CES0500000003,Average Hourly Earnings,2025,M01,January,35.83,2025-01-01
+CES0500000003,Average Hourly Earnings,2025,M02,February,35.9,2025-02-01
+CES0500000003,Average Hourly Earnings,2025,M03,March,36.02,2025-03-01
+CES0500000003,Average Hourly Earnings,2025,M04,April,36.08,2025-04-01
+CES0500000003,Average Hourly Earnings,2025,M05,May,36.23,2025-05-01
+CES0500000003,Average Hourly Earnings,2025,M06,June,36.31,2025-06-01
+CES0500000003,Average Hourly Earnings,2025,M07,July,36.43,2025-07-01
+CES0500000003,Average Hourly Earnings,2025,M08,August,36.58,2025-08-01
+CES0500000003,Average Hourly Earnings,2025,M09,September,36.67,2025-09-01
+LNS11300000,Labor Force Participation Rate,2019,M01,January,63.1,2019-01-01
+LNS11300000,Labor Force Participation Rate,2019,M02,February,63.1,2019-02-01
+LNS11300000,Labor Force Participation Rate,2019,M03,March,63.0,2019-03-01
+LNS11300000,Labor Force Participation Rate,2019,M04,April,62.8,2019-04-01
+LNS11300000,Labor Force Participation Rate,2019,M05,May,62.9,2019-05-01
+LNS11300000,Labor Force Participation Rate,2019,M06,June,63.0,2019-06-01
+LNS11300000,Labor Force Participation Rate,2019,M07,July,63.1,2019-07-01
+LNS11300000,Labor Force Participation Rate,2019,M08,August,63.1,2019-08-01
+LNS11300000,Labor Force Participation Rate,2019,M09,September,63.2,2019-09-01
+LNS11300000,Labor Force Participation Rate,2019,M10,October,63.3,2019-10-01
+LNS11300000,Labor Force Participation Rate,2019,M11,November,63.3,2019-11-01
+LNS11300000,Labor Force Participation Rate,2019,M12,December,63.3,2019-12-01
+LNS11300000,Labor Force Participation Rate,2020,M01,January,63.3,2020-01-01
+LNS11300000,Labor Force Participation Rate,2020,M02,February,63.3,2020-02-01
+LNS11300000,Labor Force Participation Rate,2020,M03,March,62.6,2020-03-01
+LNS11300000,Labor Force Participation Rate,2020,M04,April,60.1,2020-04-01
+LNS11300000,Labor Force Participation Rate,2020,M05,May,60.8,2020-05-01
+LNS11300000,Labor Force Participation Rate,2020,M06,June,61.5,2020-06-01
+LNS11300000,Labor Force Participation Rate,2020,M07,July,61.5,2020-07-01
+LNS11300000,Labor Force Participation Rate,2020,M08,August,61.7,2020-08-01
+LNS11300000,Labor Force Participation Rate,2020,M09,September,61.4,2020-09-01
+LNS11300000,Labor Force Participation Rate,2020,M10,October,61.7,2020-10-01
+LNS11300000,Labor Force Participation Rate,2020,M11,November,61.5,2020-11-01
+LNS11300000,Labor Force Participation Rate,2020,M12,December,61.5,2020-12-01
+LNS11300000,Labor Force Participation Rate,2021,M01,January,61.4,2021-01-01
+LNS11300000,Labor Force Participation Rate,2021,M02,February,61.4,2021-02-01
+LNS11300000,Labor Force Participation Rate,2021,M03,March,61.5,2021-03-01
+LNS11300000,Labor Force Participation Rate,2021,M04,April,61.6,2021-04-01
+LNS11300000,Labor Force Participation Rate,2021,M05,May,61.6,2021-05-01
+LNS11300000,Labor Force Participation Rate,2021,M06,June,61.7,2021-06-01
+LNS11300000,Labor Force Participation Rate,2021,M07,July,61.8,2021-07-01
+LNS11300000,Labor Force Participation Rate,2021,M08,August,61.7,2021-08-01
+LNS11300000,Labor Force Participation Rate,2021,M09,September,61.7,2021-09-01
+LNS11300000,Labor Force Participation Rate,2021,M10,October,61.8,2021-10-01
+LNS11300000,Labor Force Participation Rate,2021,M11,November,61.9,2021-11-01
+LNS11300000,Labor Force Participation Rate,2021,M12,December,62.0,2021-12-01
+LNS11300000,Labor Force Participation Rate,2022,M01,January,62.2,2022-01-01
+LNS11300000,Labor Force Participation Rate,2022,M02,February,62.2,2022-02-01
+LNS11300000,Labor Force Participation Rate,2022,M03,March,62.3,2022-03-01
+LNS11300000,Labor Force Participation Rate,2022,M04,April,62.2,2022-04-01
+LNS11300000,Labor Force Participation Rate,2022,M05,May,62.3,2022-05-01
+LNS11300000,Labor Force Participation Rate,2022,M06,June,62.2,2022-06-01
+LNS11300000,Labor Force Participation Rate,2022,M07,July,62.1,2022-07-01
+LNS11300000,Labor Force Participation Rate,2022,M08,August,62.3,2022-08-01
+LNS11300000,Labor Force Participation Rate,2022,M09,September,62.3,2022-09-01
+LNS11300000,Labor Force Participation Rate,2022,M10,October,62.2,2022-10-01
+LNS11300000,Labor Force Participation Rate,2022,M11,November,62.1,2022-11-01
+LNS11300000,Labor Force Participation Rate,2022,M12,December,62.3,2022-12-01
+LNS11300000,Labor Force Participation Rate,2023,M01,January,62.4,2023-01-01
+LNS11300000,Labor Force Participation Rate,2023,M02,February,62.5,2023-02-01
+LNS11300000,Labor Force Participation Rate,2023,M03,March,62.6,2023-03-01
+LNS11300000,Labor Force Participation Rate,2023,M04,April,62.6,2023-04-01
+LNS11300000,Labor Force Participation Rate,2023,M05,May,62.6,2023-05-01
+LNS11300000,Labor Force Participation Rate,2023,M06,June,62.6,2023-06-01
+LNS11300000,Labor Force Participation Rate,2023,M07,July,62.6,2023-07-01
+LNS11300000,Labor Force Participation Rate,2023,M08,August,62.8,2023-08-01
+LNS11300000,Labor Force Participation Rate,2023,M09,September,62.7,2023-09-01
+LNS11300000,Labor Force Participation Rate,2023,M10,October,62.7,2023-10-01
+LNS11300000,Labor Force Participation Rate,2023,M11,November,62.8,2023-11-01
+LNS11300000,Labor Force Participation Rate,2023,M12,December,62.5,2023-12-01
+LNS11300000,Labor Force Participation Rate,2024,M01,January,62.5,2024-01-01
+LNS11300000,Labor Force Participation Rate,2024,M02,February,62.6,2024-02-01
+LNS11300000,Labor Force Participation Rate,2024,M03,March,62.7,2024-03-01
+LNS11300000,Labor Force Participation Rate,2024,M04,April,62.7,2024-04-01
+LNS11300000,Labor Force Participation Rate,2024,M05,May,62.6,2024-05-01
+LNS11300000,Labor Force Participation Rate,2024,M06,June,62.6,2024-06-01
+LNS11300000,Labor Force Participation Rate,2024,M07,July,62.7,2024-07-01
+LNS11300000,Labor Force Participation Rate,2024,M08,August,62.7,2024-08-01
+LNS11300000,Labor Force Participation Rate,2024,M09,September,62.7,2024-09-01
+LNS11300000,Labor Force Participation Rate,2024,M10,October,62.5,2024-10-01
+LNS11300000,Labor Force Participation Rate,2024,M11,November,62.5,2024-11-01
+LNS11300000,Labor Force Participation Rate,2024,M12,December,62.5,2024-12-01
+LNS11300000,Labor Force Participation Rate,2025,M01,January,62.6,2025-01-01
+LNS11300000,Labor Force Participation Rate,2025,M02,February,62.4,2025-02-01
+LNS11300000,Labor Force Participation Rate,2025,M03,March,62.5,2025-03-01
+LNS11300000,Labor Force Participation Rate,2025,M04,April,62.6,2025-04-01
+LNS11300000,Labor Force Participation Rate,2025,M05,May,62.4,2025-05-01
+LNS11300000,Labor Force Participation Rate,2025,M06,June,62.3,2025-06-01
+LNS11300000,Labor Force Participation Rate,2025,M07,July,62.2,2025-07-01
+LNS11300000,Labor Force Participation Rate,2025,M08,August,62.3,2025-08-01
+LNS11300000,Labor Force Participation Rate,2025,M09,September,62.4,2025-09-01
+CES7000000001,Leisure & Hospitality Employment,2019,M01,January,16488.0,2019-01-01
+CES7000000001,Leisure & Hospitality Employment,2019,M02,February,16494.0,2019-02-01
+CES7000000001,Leisure & Hospitality Employment,2019,M03,March,16504.0,2019-03-01
+CES7000000001,Leisure & Hospitality Employment,2019,M04,April,16527.0,2019-04-01
+CES7000000001,Leisure & Hospitality Employment,2019,M05,May,16507.0,2019-05-01
+CES7000000001,Leisure & Hospitality Employment,2019,M06,June,16512.0,2019-06-01
+CES7000000001,Leisure & Hospitality Employment,2019,M07,July,16522.0,2019-07-01
+CES7000000001,Leisure & Hospitality Employment,2019,M08,August,16602.0,2019-08-01
+CES7000000001,Leisure & Hospitality Employment,2019,M09,September,16673.0,2019-09-01
+CES7000000001,Leisure & Hospitality Employment,2019,M10,October,16722.0,2019-10-01
+CES7000000001,Leisure & Hospitality Employment,2019,M11,November,16761.0,2019-11-01
+CES7000000001,Leisure & Hospitality Employment,2019,M12,December,16805.0,2019-12-01
+CES7000000001,Leisure & Hospitality Employment,2020,M01,January,16823.0,2020-01-01
+CES7000000001,Leisure & Hospitality Employment,2020,M02,February,16889.0,2020-02-01
+CES7000000001,Leisure & Hospitality Employment,2020,M03,March,16158.0,2020-03-01
+CES7000000001,Leisure & Hospitality Employment,2020,M04,April,8719.0,2020-04-01
+CES7000000001,Leisure & Hospitality Employment,2020,M05,May,9947.0,2020-05-01
+CES7000000001,Leisure & Hospitality Employment,2020,M06,June,11777.0,2020-06-01
+CES7000000001,Leisure & Hospitality Employment,2020,M07,July,12415.0,2020-07-01
+CES7000000001,Leisure & Hospitality Employment,2020,M08,August,12573.0,2020-08-01
+CES7000000001,Leisure & Hospitality Employment,2020,M09,September,13065.0,2020-09-01
+CES7000000001,Leisure & Hospitality Employment,2020,M10,October,13303.0,2020-10-01
+CES7000000001,Leisure & Hospitality Employment,2020,M11,November,13260.0,2020-11-01
+CES7000000001,Leisure & Hospitality Employment,2020,M12,December,12798.0,2020-12-01
+CES7000000001,Leisure & Hospitality Employment,2021,M01,January,12804.0,2021-01-01
+CES7000000001,Leisure & Hospitality Employment,2021,M02,February,13134.0,2021-02-01
+CES7000000001,Leisure & Hospitality Employment,2021,M03,March,13289.0,2021-03-01
+CES7000000001,Leisure & Hospitality Employment,2021,M04,April,13556.0,2021-04-01
+CES7000000001,Leisure & Hospitality Employment,2021,M05,May,13774.0,2021-05-01
+CES7000000001,Leisure & Hospitality Employment,2021,M06,June,14081.0,2021-06-01
+CES7000000001,Leisure & Hospitality Employment,2021,M07,July,14504.0,2021-07-01
+CES7000000001,Leisure & Hospitality Employment,2021,M08,August,14610.0,2021-08-01
+CES7000000001,Leisure & Hospitality Employment,2021,M09,September,14743.0,2021-09-01
+CES7000000001,Leisure & Hospitality Employment,2021,M10,October,14955.0,2021-10-01
+CES7000000001,Leisure & Hospitality Employment,2021,M11,November,15083.0,2021-11-01
+CES7000000001,Leisure & Hospitality Employment,2021,M12,December,15239.0,2021-12-01
+CES7000000001,Leisure & Hospitality Employment,2022,M01,January,15328.0,2022-01-01
+CES7000000001,Leisure & Hospitality Employment,2022,M02,February,15454.0,2022-02-01
+CES7000000001,Leisure & Hospitality Employment,2022,M03,March,15515.0,2022-03-01
+CES7000000001,Leisure & Hospitality Employment,2022,M04,April,15611.0,2022-04-01
+CES7000000001,Leisure & Hospitality Employment,2022,M05,May,15674.0,2022-05-01
+CES7000000001,Leisure & Hospitality Employment,2022,M06,June,15778.0,2022-06-01
+CES7000000001,Leisure & Hospitality Employment,2022,M07,July,15925.0,2022-07-01
+CES7000000001,Leisure & Hospitality Employment,2022,M08,August,15977.0,2022-08-01
+CES7000000001,Leisure & Hospitality Employment,2022,M09,September,16047.0,2022-09-01
+CES7000000001,Leisure & Hospitality Employment,2022,M10,October,16144.0,2022-10-01
+CES7000000001,Leisure & Hospitality Employment,2022,M11,November,16200.0,2022-11-01
+CES7000000001,Leisure & Hospitality Employment,2022,M12,December,16241.0,2022-12-01
+CES7000000001,Leisure & Hospitality Employment,2023,M01,January,16354.0,2023-01-01
+CES7000000001,Leisure & Hospitality Employment,2023,M02,February,16424.0,2023-02-01
+CES7000000001,Leisure & Hospitality Employment,2023,M03,March,16441.0,2023-03-01
+CES7000000001,Leisure & Hospitality Employment,2023,M04,April,16478.0,2023-04-01
+CES7000000001,Leisure & Hospitality Employment,2023,M05,May,16505.0,2023-05-01
+CES7000000001,Leisure & Hospitality Employment,2023,M06,June,16581.0,2023-06-01
+CES7000000001,Leisure & Hospitality Employment,2023,M07,July,16610.0,2023-07-01
+CES7000000001,Leisure & Hospitality Employment,2023,M08,August,16635.0,2023-08-01
+CES7000000001,Leisure & Hospitality Employment,2023,M09,September,16636.0,2023-09-01
+CES7000000001,Leisure & Hospitality Employment,2023,M10,October,16685.0,2023-10-01
+CES7000000001,Leisure & Hospitality Employment,2023,M11,November,16724.0,2023-11-01
+CES7000000001,Leisure & Hospitality Employment,2023,M12,December,16728.0,2023-12-01
+CES7000000001,Leisure & Hospitality Employment,2024,M01,January,16720.0,2024-01-01
+CES7000000001,Leisure & Hospitality Employment,2024,M02,February,16735.0,2024-02-01
+CES7000000001,Leisure & Hospitality Employment,2024,M03,March,16772.0,2024-03-01
+CES7000000001,Leisure & Hospitality Employment,2024,M04,April,16768.0,2024-04-01
+CES7000000001,Leisure & Hospitality Employment,2024,M05,May,16791.0,2024-05-01
+CES7000000001,Leisure & Hospitality Employment,2024,M06,June,16783.0,2024-06-01
+CES7000000001,Leisure & Hospitality Employment,2024,M07,July,16792.0,2024-07-01
+CES7000000001,Leisure & Hospitality Employment,2024,M08,August,16818.0,2024-08-01
+CES7000000001,Leisure & Hospitality Employment,2024,M09,September,16869.0,2024-09-01
+CES7000000001,Leisure & Hospitality Employment,2024,M10,October,16878.0,2024-10-01
+CES7000000001,Leisure & Hospitality Employment,2024,M11,November,16932.0,2024-11-01
+CES7000000001,Leisure & Hospitality Employment,2024,M12,December,16979.0,2024-12-01
+CES7000000001,Leisure & Hospitality Employment,2025,M01,January,16965.0,2025-01-01
+CES7000000001,Leisure & Hospitality Employment,2025,M02,February,16931.0,2025-02-01
+CES7000000001,Leisure & Hospitality Employment,2025,M03,March,16976.0,2025-03-01
+CES7000000001,Leisure & Hospitality Employment,2025,M04,April,16994.0,2025-04-01
+CES7000000001,Leisure & Hospitality Employment,2025,M05,May,17021.0,2025-05-01
+CES7000000001,Leisure & Hospitality Employment,2025,M06,June,17016.0,2025-06-01
+CES7000000001,Leisure & Hospitality Employment,2025,M07,July,17025.0,2025-07-01
+CES7000000001,Leisure & Hospitality Employment,2025,M08,August,17057.0,2025-08-01
+CES7000000001,Leisure & Hospitality Employment,2025,M09,September,17104.0,2025-09-01
+CES3000000001,Manufacturing Employment,2019,M01,January,12790.0,2019-01-01
+CES3000000001,Manufacturing Employment,2019,M02,February,12782.0,2019-02-01
+CES3000000001,Manufacturing Employment,2019,M03,March,12788.0,2019-03-01
+CES3000000001,Manufacturing Employment,2019,M04,April,12785.0,2019-04-01
+CES3000000001,Manufacturing Employment,2019,M05,May,12778.0,2019-05-01
+CES3000000001,Manufacturing Employment,2019,M06,June,12787.0,2019-06-01
+CES3000000001,Manufacturing Employment,2019,M07,July,12790.0,2019-07-01
+CES3000000001,Manufacturing Employment,2019,M08,August,12789.0,2019-08-01
+CES3000000001,Manufacturing Employment,2019,M09,September,12787.0,2019-09-01
+CES3000000001,Manufacturing Employment,2019,M10,October,12733.0,2019-10-01
+CES3000000001,Manufacturing Employment,2019,M11,November,12777.0,2019-11-01
+CES3000000001,Manufacturing Employment,2019,M12,December,12760.0,2019-12-01
+CES3000000001,Manufacturing Employment,2020,M01,January,12745.0,2020-01-01
+CES3000000001,Manufacturing Employment,2020,M02,February,12743.0,2020-02-01
+CES3000000001,Manufacturing Employment,2020,M03,March,12684.0,2020-03-01
+CES3000000001,Manufacturing Employment,2020,M04,April,11382.0,2020-04-01
+CES3000000001,Manufacturing Employment,2020,M05,May,11610.0,2020-05-01
+CES3000000001,Manufacturing Employment,2020,M06,June,11950.0,2020-06-01
+CES3000000001,Manufacturing Employment,2020,M07,July,11973.0,2020-07-01
+CES3000000001,Manufacturing Employment,2020,M08,August,11999.0,2020-08-01
+CES3000000001,Manufacturing Employment,2020,M09,September,12057.0,2020-09-01
+CES3000000001,Manufacturing Employment,2020,M10,October,12086.0,2020-10-01
+CES3000000001,Manufacturing Employment,2020,M11,November,12118.0,2020-11-01
+CES3000000001,Manufacturing Employment,2020,M12,December,12153.0,2020-12-01
+CES3000000001,Manufacturing Employment,2021,M01,January,12145.0,2021-01-01
+CES3000000001,Manufacturing Employment,2021,M02,February,12179.0,2021-02-01
+CES3000000001,Manufacturing Employment,2021,M03,March,12232.0,2021-03-01
+CES3000000001,Manufacturing Employment,2021,M04,April,12191.0,2021-04-01
+CES3000000001,Manufacturing Employment,2021,M05,May,12219.0,2021-05-01
+CES3000000001,Manufacturing Employment,2021,M06,June,12249.0,2021-06-01
+CES3000000001,Manufacturing Employment,2021,M07,July,12303.0,2021-07-01
+CES3000000001,Manufacturing Employment,2021,M08,August,12349.0,2021-08-01
+CES3000000001,Manufacturing Employment,2021,M09,September,12391.0,2021-09-01
+CES3000000001,Manufacturing Employment,2021,M10,October,12454.0,2021-10-01
+CES3000000001,Manufacturing Employment,2021,M11,November,12498.0,2021-11-01
+CES3000000001,Manufacturing Employment,2021,M12,December,12532.0,2021-12-01
+CES3000000001,Manufacturing Employment,2022,M01,January,12560.0,2022-01-01
+CES3000000001,Manufacturing Employment,2022,M02,February,12608.0,2022-02-01
+CES3000000001,Manufacturing Employment,2022,M03,March,12676.0,2022-03-01
+CES3000000001,Manufacturing Employment,2022,M04,April,12725.0,2022-04-01
+CES3000000001,Manufacturing Employment,2022,M05,May,12739.0,2022-05-01
+CES3000000001,Manufacturing Employment,2022,M06,June,12768.0,2022-06-01
+CES3000000001,Manufacturing Employment,2022,M07,July,12800.0,2022-07-01
+CES3000000001,Manufacturing Employment,2022,M08,August,12826.0,2022-08-01
+CES3000000001,Manufacturing Employment,2022,M09,September,12848.0,2022-09-01
+CES3000000001,Manufacturing Employment,2022,M10,October,12883.0,2022-10-01
+CES3000000001,Manufacturing Employment,2022,M11,November,12896.0,2022-11-01
+CES3000000001,Manufacturing Employment,2022,M12,December,12889.0,2022-12-01
+CES3000000001,Manufacturing Employment,2023,M01,January,12897.0,2023-01-01
+CES3000000001,Manufacturing Employment,2023,M02,February,12900.0,2023-02-01
+CES3000000001,Manufacturing Employment,2023,M03,March,12890.0,2023-03-01
+CES3000000001,Manufacturing Employment,2023,M04,April,12889.0,2023-04-01
+CES3000000001,Manufacturing Employment,2023,M05,May,12874.0,2023-05-01
+CES3000000001,Manufacturing Employment,2023,M06,June,12877.0,2023-06-01
+CES3000000001,Manufacturing Employment,2023,M07,July,12863.0,2023-07-01
+CES3000000001,Manufacturing Employment,2023,M08,August,12856.0,2023-08-01
+CES3000000001,Manufacturing Employment,2023,M09,September,12869.0,2023-09-01
+CES3000000001,Manufacturing Employment,2023,M10,October,12836.0,2023-10-01
+CES3000000001,Manufacturing Employment,2023,M11,November,12858.0,2023-11-01
+CES3000000001,Manufacturing Employment,2023,M12,December,12865.0,2023-12-01
+CES3000000001,Manufacturing Employment,2024,M01,January,12866.0,2024-01-01
+CES3000000001,Manufacturing Employment,2024,M02,February,12853.0,2024-02-01
+CES3000000001,Manufacturing Employment,2024,M03,March,12838.0,2024-03-01
+CES3000000001,Manufacturing Employment,2024,M04,April,12847.0,2024-04-01
+CES3000000001,Manufacturing Employment,2024,M05,May,12849.0,2024-05-01
+CES3000000001,Manufacturing Employment,2024,M06,June,12839.0,2024-06-01
+CES3000000001,Manufacturing Employment,2024,M07,July,12840.0,2024-07-01
+CES3000000001,Manufacturing Employment,2024,M08,August,12800.0,2024-08-01
+CES3000000001,Manufacturing Employment,2024,M09,September,12800.0,2024-09-01
+CES3000000001,Manufacturing Employment,2024,M10,October,12750.0,2024-10-01
+CES3000000001,Manufacturing Employment,2024,M11,November,12770.0,2024-11-01
+CES3000000001,Manufacturing Employment,2024,M12,December,12760.0,2024-12-01
+CES3000000001,Manufacturing Employment,2025,M01,January,12755.0,2025-01-01
+CES3000000001,Manufacturing Employment,2025,M02,February,12763.0,2025-02-01
+CES3000000001,Manufacturing Employment,2025,M03,March,12764.0,2025-03-01
+CES3000000001,Manufacturing Employment,2025,M04,April,12764.0,2025-04-01
+CES3000000001,Manufacturing Employment,2025,M05,May,12753.0,2025-05-01
+CES3000000001,Manufacturing Employment,2025,M06,June,12736.0,2025-06-01
+CES3000000001,Manufacturing Employment,2025,M07,July,12727.0,2025-07-01
+CES3000000001,Manufacturing Employment,2025,M08,August,12712.0,2025-08-01
+CES3000000001,Manufacturing Employment,2025,M09,September,12706.0,2025-09-01
 CES0000000001,Total Nonfarm Employment,2010,M01,January,129802.0,2010-01-01
 CES0000000001,Total Nonfarm Employment,2010,M02,February,129705.0,2010-02-01
 CES0000000001,Total Nonfarm Employment,2010,M03,March,129865.0,2010-03-01
@@ -308,3 +632,72 @@ LNS14000000,Unemployment Rate,2019,M09,September,3.5,2019-09-01
 LNS14000000,Unemployment Rate,2019,M10,October,3.6,2019-10-01
 LNS14000000,Unemployment Rate,2019,M11,November,3.6,2019-11-01
 LNS14000000,Unemployment Rate,2019,M12,December,3.6,2019-12-01
+LNS14000000,Unemployment Rate,2020,M01,January,3.6,2020-01-01
+LNS14000000,Unemployment Rate,2020,M02,February,3.5,2020-02-01
+LNS14000000,Unemployment Rate,2020,M03,March,4.4,2020-03-01
+LNS14000000,Unemployment Rate,2020,M04,April,14.8,2020-04-01
+LNS14000000,Unemployment Rate,2020,M05,May,13.2,2020-05-01
+LNS14000000,Unemployment Rate,2020,M06,June,11.0,2020-06-01
+LNS14000000,Unemployment Rate,2020,M07,July,10.2,2020-07-01
+LNS14000000,Unemployment Rate,2020,M08,August,8.4,2020-08-01
+LNS14000000,Unemployment Rate,2020,M09,September,7.8,2020-09-01
+LNS14000000,Unemployment Rate,2020,M10,October,6.9,2020-10-01
+LNS14000000,Unemployment Rate,2020,M11,November,6.7,2020-11-01
+LNS14000000,Unemployment Rate,2020,M12,December,6.7,2020-12-01
+LNS14000000,Unemployment Rate,2021,M01,January,6.4,2021-01-01
+LNS14000000,Unemployment Rate,2021,M02,February,6.2,2021-02-01
+LNS14000000,Unemployment Rate,2021,M03,March,6.1,2021-03-01
+LNS14000000,Unemployment Rate,2021,M04,April,6.1,2021-04-01
+LNS14000000,Unemployment Rate,2021,M05,May,5.8,2021-05-01
+LNS14000000,Unemployment Rate,2021,M06,June,5.9,2021-06-01
+LNS14000000,Unemployment Rate,2021,M07,July,5.4,2021-07-01
+LNS14000000,Unemployment Rate,2021,M08,August,5.1,2021-08-01
+LNS14000000,Unemployment Rate,2021,M09,September,4.7,2021-09-01
+LNS14000000,Unemployment Rate,2021,M10,October,4.5,2021-10-01
+LNS14000000,Unemployment Rate,2021,M11,November,4.2,2021-11-01
+LNS14000000,Unemployment Rate,2021,M12,December,3.9,2021-12-01
+LNS14000000,Unemployment Rate,2022,M01,January,4.0,2022-01-01
+LNS14000000,Unemployment Rate,2022,M02,February,3.8,2022-02-01
+LNS14000000,Unemployment Rate,2022,M03,March,3.7,2022-03-01
+LNS14000000,Unemployment Rate,2022,M04,April,3.7,2022-04-01
+LNS14000000,Unemployment Rate,2022,M05,May,3.6,2022-05-01
+LNS14000000,Unemployment Rate,2022,M06,June,3.6,2022-06-01
+LNS14000000,Unemployment Rate,2022,M07,July,3.5,2022-07-01
+LNS14000000,Unemployment Rate,2022,M08,August,3.6,2022-08-01
+LNS14000000,Unemployment Rate,2022,M09,September,3.5,2022-09-01
+LNS14000000,Unemployment Rate,2022,M10,October,3.6,2022-10-01
+LNS14000000,Unemployment Rate,2022,M11,November,3.6,2022-11-01
+LNS14000000,Unemployment Rate,2022,M12,December,3.5,2022-12-01
+LNS14000000,Unemployment Rate,2023,M01,January,3.5,2023-01-01
+LNS14000000,Unemployment Rate,2023,M02,February,3.6,2023-02-01
+LNS14000000,Unemployment Rate,2023,M03,March,3.5,2023-03-01
+LNS14000000,Unemployment Rate,2023,M04,April,3.4,2023-04-01
+LNS14000000,Unemployment Rate,2023,M05,May,3.6,2023-05-01
+LNS14000000,Unemployment Rate,2023,M06,June,3.6,2023-06-01
+LNS14000000,Unemployment Rate,2023,M07,July,3.5,2023-07-01
+LNS14000000,Unemployment Rate,2023,M08,August,3.7,2023-08-01
+LNS14000000,Unemployment Rate,2023,M09,September,3.8,2023-09-01
+LNS14000000,Unemployment Rate,2023,M10,October,3.9,2023-10-01
+LNS14000000,Unemployment Rate,2023,M11,November,3.7,2023-11-01
+LNS14000000,Unemployment Rate,2023,M12,December,3.8,2023-12-01
+LNS14000000,Unemployment Rate,2024,M01,January,3.7,2024-01-01
+LNS14000000,Unemployment Rate,2024,M02,February,3.9,2024-02-01
+LNS14000000,Unemployment Rate,2024,M03,March,3.9,2024-03-01
+LNS14000000,Unemployment Rate,2024,M04,April,3.9,2024-04-01
+LNS14000000,Unemployment Rate,2024,M05,May,4.0,2024-05-01
+LNS14000000,Unemployment Rate,2024,M06,June,4.1,2024-06-01
+LNS14000000,Unemployment Rate,2024,M07,July,4.2,2024-07-01
+LNS14000000,Unemployment Rate,2024,M08,August,4.2,2024-08-01
+LNS14000000,Unemployment Rate,2024,M09,September,4.1,2024-09-01
+LNS14000000,Unemployment Rate,2024,M10,October,4.1,2024-10-01
+LNS14000000,Unemployment Rate,2024,M11,November,4.2,2024-11-01
+LNS14000000,Unemployment Rate,2024,M12,December,4.1,2024-12-01
+LNS14000000,Unemployment Rate,2025,M01,January,4.0,2025-01-01
+LNS14000000,Unemployment Rate,2025,M02,February,4.1,2025-02-01
+LNS14000000,Unemployment Rate,2025,M03,March,4.2,2025-03-01
+LNS14000000,Unemployment Rate,2025,M04,April,4.2,2025-04-01
+LNS14000000,Unemployment Rate,2025,M05,May,4.2,2025-05-01
+LNS14000000,Unemployment Rate,2025,M06,June,4.1,2025-06-01
+LNS14000000,Unemployment Rate,2025,M07,July,4.2,2025-07-01
+LNS14000000,Unemployment Rate,2025,M08,August,4.3,2025-08-01
+LNS14000000,Unemployment Rate,2025,M09,September,4.4,2025-09-01
