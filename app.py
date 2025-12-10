@@ -52,6 +52,20 @@ col3.metric(
     label="Percent Change",
     value=f"{pct_change:.2f}%")
 
+if change > 0:
+    direction = "increased"
+elif change < 0:
+    direction = "decreased"
+else:
+    direction = "remained unchanged"
+
+st.info(
+    f"📘 Interpretation: Between last month and the latest release, "
+    f"**{selected_series} {direction} by {abs(change):,.0f} units "
+    f"({pct_change:.2f}%)**, suggesting a "
+    f"{'strengthening' if change > 0 else 'weakening' if change < 0 else 'stable'} labor market trend.")
+
+
 chart = (
     alt.Chart(filtered_df)
     .mark_line(point=True)
