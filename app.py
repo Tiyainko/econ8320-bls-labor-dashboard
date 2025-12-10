@@ -53,18 +53,16 @@ else:
     change = 0
     pct_change = 0
 
-if "Rate" in selected_series or "Participation" in selected_series or "Earnings" in selected_series:
-    current_display = f"{latest_value:.2f}"
-    change_display = f"{change:+.2f} pct pts"
+if "Rate" in selected_series or "Unemployment" in selected_series:
+    display_value = f"{latest_value:.2f}%"
 else:
-    current_display = f"{latest_value:,.0f}"
-    change_display = f"{change/1000:+.0f}K Jobs"
+    display_value = f"{latest_value:,.2f}"
 
 col1, col2, col3 = st.columns(3)
 
-col1.metric("Current Value", current_display)
-col2.metric("Month-over-Month Change", change_display)
-col3.metric("Percent Change", f"{pct_change:.2f}%")
+col1.metric(label="Current Value", value=display_value)
+col2.metric(label="Month-over-Month Change", value=f"{change:,.2f}")
+col3.metric(label="Percent Change", value=f"{pct_change:.2f}%")
 
 if change > 0:
     direction = "increased"
@@ -118,13 +116,11 @@ bar_chart = (
     .mark_bar()
     .encode(
         x=alt.X("series_name:N", title="Sector"),
-        y=alt.Y("mo_change:Q", title="Month-to-Month Change (Thousands of Jobs)"),
+        y=alt.Y("mo_change:Q", title="Month-to-Month Change"),
         tooltip=["series_name", "mo_change"])
-    .properties(
-        title="Latest Monthly Job Change by Sector (Thousands of Jobs)"))
+    .properties(title="Latest Monthly Job Change by Sector"))
 
 st.altair_chart(bar_chart, use_container_width=True)
-st.caption("Positive values indicate job gains; negative values indicate job losses.")
 
 st.subheader("Sector Employment Trends Over Time")
 
@@ -135,8 +131,8 @@ area_chart = (
         x=alt.X("date:T", title="Month"),
         y=alt.Y("value:Q", title="Employment Level"),
         color="series_name:N",
-        tooltip=["series_name", "date:T", "value:Q"])
-    .properties(
-        title="Employment Trends by Sector, 2019–Present"))
+        tooltip=["series_name", "date:T", "value:Q"]
+    )
+    .properties(title="Employment Trends by Sector"))
 
 st.altair_chart(area_chart, use_container_width=True)
